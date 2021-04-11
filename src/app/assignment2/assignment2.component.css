@@ -1,0 +1,15 @@
+.example-form-field {
+    width: 400px;
+}
+
+.margin-right{
+    margin-right: 12px;
+}
+
+.example-card {
+    max-width: 400px;
+  }
+
+.error{
+    font-size: 12px;
+}

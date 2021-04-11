@@ -1,0 +1,11 @@
+<div *ngFor="let question of questions; let index = index">
+    {{index+1}}) <label id="example-radio-group-label" [innerHTML]='question.question'></label>
+    <mat-radio-group
+        aria-labelledby="example-radio-group-label"
+        class="example-radio-group" [(ngModel)]="question.optionSelected">
+        <mat-radio-button class="example-radio-button" *ngFor="let option of question.options" [value]="option">
+            {{option}}
+        </mat-radio-button>
+    </mat-radio-group>
+</div>
+<button style="margin: auto; display: flex;" mat-raised-button (click)="submit()">Submit Quiz</button>
